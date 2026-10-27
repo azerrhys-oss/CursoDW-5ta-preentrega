@@ -16,7 +16,7 @@
                     <img class="logo" src="assets/mono.jpg" alt="Logo">
                     Alexander Zerr
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <button class="navbar-toggler menu-boton" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="menu">
@@ -47,24 +47,30 @@
 
         <section class="caja">
             <h2>Galería</h2>
-            <div id="galeria" class="carousel slide">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="galeria-img" src="assets/img/casco.jpg" alt="Casco">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="galeria-img" src="assets/img/Gestion.jpg" alt="Matriz de riesgo">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="galeria-img" src="assets/img/checklist.png" alt="Checklist">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <div id="galeria" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="galeria-img" src="assets/img/casco.jpg" alt="Casco">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="galeria-img" src="assets/img/Gestion.jpg" alt="Matriz de riesgo">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="galeria-img" src="assets/img/checklist.png" alt="Checklist">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev galeria-boton" type="button" data-bs-target="#galeria" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </button>
+                            <button class="carousel-control-next galeria-boton" type="button" data-bs-target="#galeria" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev galeria-boton" type="button" data-bs-target="#galeria" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-                <button class="carousel-control-next galeria-boton" type="button" data-bs-target="#galeria" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
             </div>
         </section>
 
