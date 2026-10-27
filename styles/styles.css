@@ -90,6 +90,21 @@ a {
 }
 
 
+.menu-boton {
+    border: 2px solid var(--color-primary);
+    transition: background-color 0.3s;
+}
+
+.menu-boton:hover,
+.menu-boton:focus {
+    background-color: var(--color-secondary);
+}
+
+.menu-boton:active {
+    background-color: var(--color-accent);
+}
+
+
 /* ---------- Contenido principal y secciones ---------- */
 
 main {
