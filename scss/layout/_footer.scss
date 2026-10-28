@@ -1,0 +1,32 @@
+@use "../utilities/variables" as *;
+
+.pie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: $espacio-chico;
+    padding: $espacio-chico;
+    color: $color-blanco;
+    background-color: $color-primario;
+}
+
+.redes {
+    display: flex;
+    gap: $espacio-chico;
+    margin: 0;
+    padding: 0;
+}
+
+.redes-item {
+    display: flex;
+}
+
+.red-social {
+    color: $color-acento;
+    transition: color $transicion;
+
+    &:hover {
+        color: $color-blanco;
+    }
+}

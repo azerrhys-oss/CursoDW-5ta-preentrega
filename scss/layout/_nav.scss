@@ -1,0 +1,31 @@
+@use "../utilities/variables" as *;
+
+.enlace-menu {
+    color: $color-primario;
+    transition: background-color $transicion;
+
+    &:hover,
+    &:focus {
+        color: $color-primario;
+        background-color: $color-secundario;
+    }
+
+    &:active {
+        color: $color-blanco;
+        background-color: $color-primario;
+    }
+}
+
+.menu-boton {
+    border: 2px solid $color-primario;
+    transition: background-color $transicion;
+
+    &:hover,
+    &:focus {
+        background-color: $color-secundario;
+    }
+
+    &:active {
+        background-color: $color-acento;
+    }
+}
