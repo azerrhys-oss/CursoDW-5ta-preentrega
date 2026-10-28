@@ -1,0 +1,12 @@
+@use "../utilities/variables" as *;
+
+.galeria-img {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: $color-primario;
+}

@@ -1,0 +1,33 @@
+@use "../utilities/variables" as *;
+
+.boton {
+    padding: 10px $espacio-chico;
+    font-weight: 700;
+    color: $color-blanco;
+    background-color: $color-primario;
+    border: 2px solid $color-primario;
+    transition: background-color $transicion;
+
+    &:hover,
+    &:focus {
+        color: $color-primario;
+        background-color: $color-acento;
+    }
+
+    &:active {
+        background-color: $color-blanco;
+    }
+}
+
+.galeria-boton {
+    transition: background-color $transicion;
+
+    &:hover,
+    &:focus {
+        background-color: $color-secundario;
+    }
+
+    &:active {
+        background-color: $color-acento;
+    }
+}

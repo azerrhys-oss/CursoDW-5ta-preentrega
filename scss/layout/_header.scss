@@ -1,0 +1,21 @@
+@use "../utilities/variables" as *;
+
+.encabezado {
+    padding: 10px $espacio-chico;
+    background-color: $color-blanco;
+    border-bottom: 4px solid $color-acento;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: $fuente-titulos;
+    font-weight: 700;
+    color: $color-primario;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
