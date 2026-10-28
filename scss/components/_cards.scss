@@ -1,15 +1,32 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
+%caja-base {
+    padding: $espacio-medio;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .presentacion {
+    @extend %caja-base;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
         "texto"
         "imagen";
     align-items: center;
-    padding: $espacio-medio;
     background-color: $color-secundario;
+    animation: aparecer 0.8s ease-out;
 
     @media (min-width: $pantalla-escritorio) {
         grid-template-columns: 2fr 1fr;
@@ -23,9 +40,14 @@
 }
 
 .caja {
-    padding: $espacio-medio;
+    @extend %caja-base;
     background-color: $color-blanco;
     border: 1px solid $color-borde;
+    @include transicion(transform);
+
+    &:hover {
+        transform: translateY(-5px);
+    }
 }
 
 .lista {

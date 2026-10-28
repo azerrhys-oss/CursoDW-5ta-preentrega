@@ -12,6 +12,11 @@ body {
 main {
   padding: 40px 20px;
 }
+@media (min-width: 768px) {
+  main {
+    padding: 40px;
+  }
+}
 
 section {
   display: flex;
@@ -52,11 +57,21 @@ h2 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
 }
 
 h2 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 1.75rem;
+  }
 }
 
 a {
@@ -110,6 +125,7 @@ a {
 
 .pie {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -117,6 +133,14 @@ a {
   padding: 20px;
   color: #ffffff;
   background-color: #1f3a4d;
+}
+.pie p {
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .pie {
+    flex-direction: row;
+  }
 }
 
 .redes {
@@ -164,13 +188,27 @@ a {
   background-color: #f2b705;
 }
 
+.caja, .presentacion {
+  padding: 30px;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .presentacion {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-areas: "texto" "imagen";
   align-items: center;
-  padding: 30px;
   background-color: #e8eef2;
+  animation: aparecer 0.8s ease-out;
 }
 @media (min-width: 1024px) {
   .presentacion {
@@ -187,9 +225,12 @@ a {
 }
 
 .caja {
-  padding: 30px;
   background-color: #ffffff;
   border: 1px solid #d5dee5;
+  transition: transform 0.3s;
+}
+.caja:hover {
+  transform: translateY(-5px);
 }
 
 .lista {

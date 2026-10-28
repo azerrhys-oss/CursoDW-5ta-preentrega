@@ -1,7 +1,9 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 .pie {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -9,6 +11,14 @@
     padding: $espacio-chico;
     color: $color-blanco;
     background-color: $color-primario;
+
+    p {
+        margin: 0;
+    }
+
+    @media (min-width: $pantalla-tablet) {
+        flex-direction: row;
+    }
 }
 
 .redes {
@@ -24,7 +34,7 @@
 
 .red-social {
     color: $color-acento;
-    transition: color $transicion;
+    @include transicion(color);
 
     &:hover {
         color: $color-blanco;

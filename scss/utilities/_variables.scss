@@ -11,9 +11,10 @@ $fuente-titulos: 'Montserrat', sans-serif;
 $fuente-texto: 'Roboto', sans-serif;
 
 $espacio-chico: 20px;
-$espacio-medio: 30px;
-$espacio-grande: 40px;
+$espacio-medio: $espacio-chico + 10px;
+$espacio-grande: $espacio-chico * 2;
 
 $transicion: 0.3s;
 
+$pantalla-tablet: 768px;
 $pantalla-escritorio: 1024px;
