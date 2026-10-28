@@ -1,5 +1,11 @@
+@use "variables" as *;
+
 @mixin columna($espacio) {
     display: flex;
     flex-direction: column;
     gap: $espacio;
+}
+
+@mixin transicion($propiedad, $tiempo: $transicion) {
+    transition: $propiedad $tiempo;
 }

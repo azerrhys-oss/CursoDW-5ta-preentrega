@@ -1,4 +1,5 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 .boton {
     padding: 10px $espacio-chico;
@@ -6,7 +7,7 @@
     color: $color-blanco;
     background-color: $color-primario;
     border: 2px solid $color-primario;
-    transition: background-color $transicion;
+    @include transicion(background-color);
 
     &:hover,
     &:focus {
@@ -20,7 +21,7 @@
 }
 
 .galeria-boton {
-    transition: background-color $transicion;
+    @include transicion(background-color);
 
     &:hover,
     &:focus {

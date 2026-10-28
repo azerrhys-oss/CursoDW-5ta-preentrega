@@ -1,8 +1,9 @@
 @use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 .enlace-menu {
     color: $color-primario;
-    transition: background-color $transicion;
+    @include transicion(background-color);
 
     &:hover,
     &:focus {
@@ -18,7 +19,7 @@
 
 .menu-boton {
     border: 2px solid $color-primario;
-    transition: background-color $transicion;
+    @include transicion(background-color);
 
     &:hover,
     &:focus {
