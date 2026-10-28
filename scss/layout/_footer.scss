@@ -3,6 +3,7 @@
 
 .pie {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -10,6 +11,14 @@
     padding: $espacio-chico;
     color: $color-blanco;
     background-color: $color-primario;
+
+    p {
+        margin: 0;
+    }
+
+    @media (min-width: $pantalla-tablet) {
+        flex-direction: row;
+    }
 }
 
 .redes {
