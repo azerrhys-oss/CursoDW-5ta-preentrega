@@ -1,12 +1,12 @@
 # CURSO DE DESARROLLO WEB
 
-Mi primer proyecto: Una página laboral de higiene y seguridad.
+Mi primer proyecto: una página laboral de higiene y seguridad.
 
 Ver el sitio:
-https://azerrhys-oss.github.io/CursoDW-5ta-preentrega/
+https://azerrhys-oss.github.io/CursoDesarrolloWeb/
 
 Ruta del codigo:
-https://github.com/azerrhys-oss/CursoDW-5ta-preentrega
+https://github.com/azerrhys-oss/CursoDesarrolloWeb
 
 ## Herramientas
 - HTML5: estructura de las 5 páginas.
@@ -20,6 +20,8 @@ https://github.com/azerrhys-oss/CursoDW-5ta-preentrega
 - Visual Studio Code y Node.js (para compilar Sass).
 
 ## Como compilar los estilos
+```
 sass scss/main.scss css/style.css --no-source-map
+```
 
 Hecho por Alexander Zerr
